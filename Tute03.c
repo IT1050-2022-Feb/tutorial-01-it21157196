@@ -12,8 +12,24 @@ n -> 1-
 sum = 1+2+3+...+10 = 55 */
 
 #include <stdio.h>
+
+//function main beginus
 int main() {
+
+  int n, i = 1, total=0;//veriable declaration
+
+  printf("Enter your 'n' number: "); // input user's value
+  scanf("%d", &n); //read integer value
+
+  do //begin do while
+  {
+    total += i;
+    i++;
+  }while (n >= i);//end 
+
+  printf("Sum of numbers: %d", total);//display total
+  printf("\n!Thank you!\n"); //display thank you
   
   return 0;
-}
+} //end main function
 
